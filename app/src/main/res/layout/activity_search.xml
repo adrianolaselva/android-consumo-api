@@ -16,13 +16,16 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:hint="@string/hint_search"/>
+            android:hint="@string/hint_search" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintBottom_toTopOf="@+id/btSearch"/>
     <Button
             android:text="@string/button_search"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="69dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btSearch" app:layout_constraintStart_toStartOf="@+id/inputNumeroPokemon"
-            app:layout_constraintEnd_toEndOf="@+id/inputNumeroPokemon"/>
+            app:layout_constraintEnd_toEndOf="@+id/inputNumeroPokemon" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputNumeroPokemon" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/ivPokemon"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher"
